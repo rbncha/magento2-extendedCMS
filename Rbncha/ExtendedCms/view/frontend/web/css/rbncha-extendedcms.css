@@ -1,0 +1,323 @@
+
+/* START - Captivatebio template 1 Page ---------------------------------------------------- */
+
+
+/* Button */
+
+.captivatebio-template1-content-blocks .theme-btn-arrow{
+	padding-right: 20px;
+}
+
+.captivatebio-template1-content-blocks .theme-btn-arrow:after{
+	content: '';
+}
+
+
+/* START - Captivatebio template 1 Page - Banner ------------------------------------ */
+.captivatebio-template1-block-1 {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  min-height: 432px;
+}
+.captivatebio-template1-block-1 .content {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 49%;
+}
+.captivatebio-template1-block-1 .content-inner {
+  position: relative;
+  z-index: 2;
+}
+.captivatebio-template1-block-1 .content-inner h1 {
+  padding-bottom: 16px;
+}
+.captivatebio-template1-block-1 .content .content-inner a {
+  display: inline-block;
+  margin-top: 14px;
+}
+.captivatebio-template1-block-1 .block-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+}
+.captivatebio-template1-block-1 .block-image img {
+  /*width: 76%;*/
+}
+/* END - Captivatebio template 1 Page - Banner */
+
+/* START - Captivatebio template 1 Page - Block 2 ------------------------------------ */
+.captivatebio-template1-content-blocks {
+  background: #FFF !important;
+  margin: 0 -100%;
+  padding: 0 100%;
+}
+.captivatebio-template1-block-2 {
+  position: relative;
+  height: 100vh;
+  max-height: 665px;
+}
+.captivatebio-template1-block-2 .container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.captivatebio-template1-block-2 .content {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 49%;
+}
+.captivatebio-template1-block-2 .content-inner {
+  position: relative;
+  z-index: 3;
+  padding-left: 30px;
+}
+.captivatebio-template1-block-2 h1 {
+  margin-bottom: 33px;
+  margin-top: 25px;
+}
+.captivatebio-template1-block-2 p.big-text {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 23px !important;
+}
+.captivatebio-template1-block-2 a {
+  margin-top: 27px;
+}
+.captivatebio-template1-block-2 .block-image {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 1;
+}
+/* END - Captivatebio template 1 Page - Block 2 */
+
+/* START - Captivatebio template 1 Page - Block 3 ------------------------------------ */
+.captivatebio-template1-block-3 .content{
+	left: 0 !important;
+}
+
+.captivatebio-template1-block-3 .block-image {
+	right: 0 !important;
+	left: auto;
+}
+
+/* END - Captivatebio template 1 Page - Block 3 */
+
+
+/* START - Captivatebio template 1 - Block 4 ------------------------------------ */
+.captivatebio-template1-block-4 {
+  margin: 0 -100%;
+  padding: 0 100%;
+  text-align: center;
+}
+.captivatebio-template1-block-4 .content {
+  padding: 60px 0 0 0;
+}
+.captivatebio-template1-block-4 h1 {
+  margin-bottom: 25px;
+}
+.captivatebio-template1-block-4 p.big-text {
+  width: 990px;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 auto 75px;
+}
+
+/* END - Captivatebio template 1 - Block 4 --------------------------------- */
+
+
+/* START - Captivatebio template 1 - Block 4 --------------------------------- */
+
+.captivatebio-template1-block-5 .content .row .col-md-4 {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.captivatebio-template1-block-5 {
+  margin: 0 -100%;
+  padding: 0 100%;
+  background: #ffffff;
+  text-align: center;
+}
+.captivatebio-template1-block-5 .content {
+  padding: 50px;
+}
+.captivatebio-template1-block-5 h1 {
+  margin-bottom: 79px;
+}
+.captivatebio-template1-block-5 h5 {
+  font-weight: bold;
+  margin-top: 36px;
+  text-align: left;
+}
+
+.captivatebio-template1-block-5 .caption {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 60px 0 26px 0;
+}
+.captivatebio-template1-block-5 .caption span {
+  font-weight: 800;
+}
+
+.captivatebio-template1-block-5 ul{
+	margin-left: 20px;
+}
+
+.captivatebio-template1-block-5 li, .captivatebio-template1-block-5 ol{
+	text-align: left;
+	
+}
+
+.captivatebio-template1-block-5 ul li{
+	list-style-type: none;
+}
+
+.captivatebio-template1-block-5 ol li{
+	list-style: none;
+	
+	counter-increment:li;
+}
+
+
+.captivatebio-template1-block-5 ol li::before {
+	content: counter(li);
+	display: inline-block; width: 1em;
+	margin-left: -1em;
+}
+
+.captivatebio-template1-block-5 li:before{
+    content: "\2022";
+    color: #0088cc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 15px;
+}
+
+.captivatebio-template1-block-5 ul.disc li:before{
+	font-size: 24px;
+}
+
+.captivatebio-template1-block-5 ul.check li:before {
+    content: "✔";
+}
+
+@media (max-width: 1199px) {
+	.captivatebio-template1-block-5 .content {
+        padding: 50px 0;
+    }
+    
+}
+
+@media (max-width: 767px) {
+	.captivatebio-template1-block-5 h1 {
+        margin-bottom: 30px;
+    }
+    .captivatebio-template1-block-5 .block-icon {
+        margin-top: 50px;
+    }
+}
+
+
+/* END - Captivatebio template 1 - Block 4 --------------------------------- */
+
+
+
+/* ************************************* */
+/* ***        Responsive CSS         *** */
+/* ************************************* */
+
+@media (max-width: 1199px) {
+    
+    .captivatebio-template1-block-1 {
+        height: auto;
+        max-height: inherit;
+    }
+    .captivatebio-template1-block-1 .content {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .captivatebio-template1-block-1 .content .content-inner p {
+        width: 100%;
+    }
+    .captivatebio-template1-block-1 .block-image {
+        display: block;
+        position: static;
+        width: 100%;
+        margin: 50px 0 20px;
+    }
+    .captivatebio-template1-block-1 .block-image img {
+        width: 100%;
+    }
+    .captivatebio-template1-block-2 {
+        background: none;
+        height: auto;
+        max-height: inherit;
+        padding: 50px 0 75px;
+        padding-bottom: 50px;
+    }
+    .captivatebio-template1-block-2 .content {
+        position: relative;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .captivatebio-template1-block-2 .content {
+        top: 4%;
+    }
+    .captivatebio-template1-block-2 .content-inner {
+        padding-left: 0;
+    }
+    .captivatebio-template1-block-2 .block-image {
+        display: block;
+        position: static;
+        text-align: center;
+        margin: 58px 0 0 0;
+    }
+    .captivatebio-template1-block-3 p.big-text {
+        width: 100%;
+    }
+    
+    .captivatebio-template1-block-3 .block-image img {
+        /*right: 0 !important;*/
+    }
+    
+    .captivatebio-template1-block-4 p.big-text {
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ END - Captivatebio template 1 Page ------------ */
+
+
+
+
+
+
+
+
+

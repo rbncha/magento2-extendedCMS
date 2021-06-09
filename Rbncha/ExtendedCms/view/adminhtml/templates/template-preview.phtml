@@ -1,0 +1,71 @@
+<?php
+	$rhelper = $this->helper('\Rbncha\ExtendedCms\Helper\Data');
+	//echo $rhelper->getMediaUrl('cms/abc.png');
+
+?>
+
+<div class="admin__field-label">
+    <label>
+        <span>Template Preview</span>
+    </label>
+</div>
+<div class="admin__field-control" id="rbncha_extendedcms_image_placeholder">
+	<img id="rbncha_extendedcms_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="200">
+</div>
+
+<script>
+require([
+    'jquery'
+], function ($) {
+	
+	$(document).ready(function(){
+
+		$('select[name$="templates"]').on('change', function (e){
+			var optionSelected = $("option:selected", this);
+			var valueSelected = this.value;
+			var thumbnaiSelected = $(this).attr('thumbnail');
+			
+			if(valueSelected != ''){
+				jQuery.ajax({
+				    url: '<?= $block->getUrl('extendedcms/templates/view')?>',
+				    type: 'POST',
+				    dataType: 'json',
+				    data: {
+				    	'templateid' : valueSelected	
+				    },
+				    showLoader: true,
+				    
+				}).done(function (data) {
+					var result = jQuery.parseJSON(data);
+					//console.log(result);
+					//console.log(result.template.thumbnail);
+					
+					$('#rbncha_extendedcms_image_placeholder img').remove();
+					$('#rbncha_extendedcms_image_placeholder').prepend($('<img>', {width:200, src: result.template.thumbnail}));
+					
+					//REPLACE TEXT INTO CONTENT FIELD
+					
+					if($('div[data-index$="content"] div.fieldset-wrapper-title').attr('data-state-collapsible') != 'open'){
+						$('div[data-index$="content"] div.fieldset-wrapper-title').trigger('click');
+					}
+					
+					$('#cms_page_form_content').val(result.template.content);
+					$('#wysiwygcms_page_form_content').val(result.template.content);
+					
+					console.log(jQuery('#wysiwygcms_page_form_content'));
+					
+					//varienGlobalEvents.attachEventHandler('tinymceSaveContent', function(){ return result.template.content});
+					
+					
+					//wysiwygcms_page_form_content.wysiwygInstance.updateTextArea();
+					//tinymce.get('wysiwygcms_page_form_content').insertContent(result.template.content);  
+				});
+			}else{
+				$('#rbncha_extendedcms_image_placeholder img').remove();
+				$('#rbncha_extendedcms_image_placeholder').prepend($('<img>', {width:200, src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='}));
+			}
+			
+		});
+	});
+});
+</script>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="cms_templates" sortOrder="15">
+        <settings>
+            <collapsible>true</collapsible>
+            <label translate="true">CMS Templates</label>
+        </settings>
+		    
+	    <field name="templates" formElement="select">
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Select Template</label>
+                <dataScope>templates</dataScope>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options>
+                            <option name="templae-1" xsi:type="array">
+                                <item name="value" xsi:type="string">template-1</item>
+                                <item name="label" xsi:type="string">Template 1</item>
+                            </option>
+                            <option name="template-2" xsi:type="array">
+                                <item name="value" xsi:type="string">template-2</item>
+                                <item name="label" xsi:type="string">Template 2</item>
+                            </option>
+                        </options>
+                        <caption translate="true">-- Please Select --</caption>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+        
+        <htmlContent name="html_content">
+	        <settings>
+	            <additionalClasses>
+	                <class name="html-content-class admin__field">true</class>
+	            </additionalClasses>
+	        </settings>
+	        <block name="html_content_block" class="Magento\Backend\Block\Template">
+	            <arguments>
+	                <argument name="template" xsi:type="string">Rbncha_ExtendedCms::template-preview.phtml</argument>
+	            </arguments>
+	        </block>
+	    </htmlContent>
+		    
+    </fieldset>
+</form>
